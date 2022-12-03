@@ -35,7 +35,7 @@ echo PHP_EOL;
 //-->Formas de adicionar elementos em um array
 $listaDeFrutas[3] = 'Morango';
 
-$listaDeFrutas[count($listaDeFrutas)] = 'Laranja';
+$listaDeFrutas[sizeof($listaDeFrutas)] = 'Laranja';
 
 $listaDeVerduras[] = 'Coêntro';
 
@@ -50,13 +50,32 @@ $listaDeLegumes = [
     'terceiro' => 'Cenoura'
 ];
 print_r($listaDeLegumes);
+//<--
 
+//-->Arrays multidimensionais
+$listaDeIngredientes = [
+    'Proteínas' => [
+        'Picanha',
+        'Bacon',
+        'Salmão'
+    ],
+    'Carboidratos' => [
+        'Arroz',
+        'Feijão',
+        'Mandioca'
+    ],
+    'Gorduras' => [
+        'Margarina',
+        'Requeijão',
+        'Óleo de côco'
+    ]
+];
+var_dump($listaDeIngredientes);
 //<--
 
 //-->Forma de remover o elemento de um array
 unset($listaDeFrutas[2]);
 print_r($listaDeFrutas);
-
 //<--
 
 //-->Forma de reindexar os elementos de um array ou copiar um array
@@ -68,7 +87,6 @@ var_export($listaDeLegumes);
 
 $copiaDeArray = array_values($listaDeFrutas);
 var_export($copiaDeArray);
-
 //<--
 
 //-->Formas de atribuir valores de vários elementos de um array em várias variáveis
@@ -80,11 +98,11 @@ echo $variavel1.PHP_EOL.$variavel2.PHP_EOL.$variavel3.PHP_EOL.PHP_EOL;
 
 [3 => $variavel1, 0 => $variavel2, 2 => $variavel3] = $listaDeFrutas;
 echo $variavel1.PHP_EOL.$variavel2.PHP_EOL.$variavel3.PHP_EOL.PHP_EOL;
-
 //<--
 
 //--> Interrompendo o script
 die('A última mensagem não é exibida.');
 
+/** @noinspection PhpUnreachableStatementInspection */
 echo 'Última mensagem.';
 //<--
