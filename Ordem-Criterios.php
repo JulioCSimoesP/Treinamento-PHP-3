@@ -86,15 +86,15 @@ $notas = [
 //<--
 
 //-->Função de ordenação decrescente e alfabética
-function ordenaNotas(array $array1, array $array2): int
+function ordenaNotas(array $valor1, array $valor2): int
 {
-    if($array1['nota'] > $array2['nota']) {
+    if($valor1['nota'] > $valor2['nota']) {
         return -1;
-    } elseif($array1['nota'] < $array2['nota']) {
+    } elseif($valor1['nota'] < $valor2['nota']) {
         return 1;
-    } elseif($array1['nome'] < $array2['nome']) {
+    } elseif($valor1['nome'] < $valor2['nome']) {
         return -1;
-    } elseif($array1['nome'] > $array2['nome']) {
+    } elseif($valor1['nome'] > $valor2['nome']) {
         return 1;
     }
 
