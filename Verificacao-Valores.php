@@ -116,7 +116,7 @@ foreach ($retornoBusca as $valor) {
     echo $valor.' ';
 }
 echo PHP_EOL;
-
+var_dump($retornoBusca);
 //=====
 
 $retornoBusca = array_keys($array, $busca2);

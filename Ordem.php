@@ -1,6 +1,6 @@
 <?php
 
-//-->Utilização da função sort() em arrays numéricos
+//-->Array a ser manipulado
 $arrayNumerico = [
     9,
     5,
@@ -13,7 +13,9 @@ $arrayNumerico = [
     3,
     2
 ];
+//<--
 
+//-->Utilização da função sort() em arrays numéricos
 echo 'Array numérico desordenado: ';
 var_dump($arrayNumerico);
 echo PHP_EOL;

@@ -78,7 +78,7 @@ unset($listaDeFrutas[2]);
 print_r($listaDeFrutas);
 //<--
 
-//-->Forma de reindexar os elementos de um array ou copiar um array
+//-->Forma de reindexar os elementos de um array ou copiar os valores de um array
 $listaDeFrutas = array_values($listaDeFrutas);
 var_export($listaDeFrutas);
 
@@ -87,17 +87,7 @@ var_export($listaDeLegumes);
 
 $copiaDeArray = array_values($listaDeFrutas);
 var_export($copiaDeArray);
-//<--
-
-//-->Formas de atribuir valores de vários elementos de um array em várias variáveis
-list($variavel1,$variavel2,$variavel3) = $listaDeFrutas;
-echo $variavel1.PHP_EOL.$variavel2.PHP_EOL.$variavel3.PHP_EOL.PHP_EOL;
-
-list($variavel1,,$variavel2,$variavel3) = $listaDeFrutas;
-echo $variavel1.PHP_EOL.$variavel2.PHP_EOL.$variavel3.PHP_EOL.PHP_EOL;
-
-[3 => $variavel1, 0 => $variavel2, 2 => $variavel3] = $listaDeFrutas;
-echo $variavel1.PHP_EOL.$variavel2.PHP_EOL.$variavel3.PHP_EOL.PHP_EOL;
+echo PHP_EOL;
 //<--
 
 //--> Interrompendo o script
