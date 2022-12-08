@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../PHP-1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../PHP-4" vcs="Git" />
   </component>
 </project>

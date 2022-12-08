@@ -7,5 +7,6 @@
     <orderEntry type="module" module-name="PHP-extra" />
     <orderEntry type="module" module-name="PHP-2" />
     <orderEntry type="module" module-name="PHP-1" />
+    <orderEntry type="module" module-name="PHP-4" />
   </component>
 </module>
