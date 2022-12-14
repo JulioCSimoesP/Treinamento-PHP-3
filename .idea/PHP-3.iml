@@ -8,5 +8,6 @@
     <orderEntry type="module" module-name="PHP-2" />
     <orderEntry type="module" module-name="PHP-1" />
     <orderEntry type="module" module-name="PHP-4" />
+    <orderEntry type="module" module-name="PHP-POO" />
   </component>
 </module>
